@@ -2,15 +2,21 @@
  * Created by qa1 on 12/11/15.
  */
 
+import junit.framework.Assert;
 import org.junit.Test;
+import org.junit.Assert.*;
 
-@Test
-public void testCheckCircleArea() {
-    //Testing the class
-    Circle circle = new Circle();
+public class testCheckCircleArea {
 
-    //Checking method
+    @Test
+    public void testCheckCircleArea() {
+        //Testing the class
+        Circle circle = new Circle();
 
-    assertEquals("3.14 * (r=1) * 1 must be 3.14", 3.14, circle.);
+        //Checking method
+        double result = circle.getCircleArea(1);
 
+        Assert.assertEquals("radius = 1", 3.141592653589793, result);
+
+    }
 }
