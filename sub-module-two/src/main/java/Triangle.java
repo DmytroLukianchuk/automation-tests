@@ -3,7 +3,7 @@
  */
 public class Triangle {
 
-    public int getTriangleleSquare(int base, int height) {
+    public int getTriangleleArea(int base, int height) {
         return base * height;
 
     }
